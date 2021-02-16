@@ -7,7 +7,7 @@
     "test": "./node_modules/.bin/nightwatch -c ./Nightwatch.js --env default"
   },
   "dependencies": {
-    "chromedriver": "~2.10.0-1",
+    "chromedriver": "~2.29.2",
     "selenium-server": "2.38.0",
     "dalek-browser-ie": "0.0.4",
     "nightwatch-pages": "*",
