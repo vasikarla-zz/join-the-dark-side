@@ -4,14 +4,18 @@
   "author": "Seth McLaughlin",
   "license": "MIT",
   "scripts": {
-    "test": "./node_modules/.bin/nightwatch -c ./Nightwatch.js --env default"
+    "test": "./node_modules/.bin/nightwatch -c ./Nightwatch.js --env default",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "chromedriver": "~2.10.0-1",
+    "chromedriver": "~2.29.2",
     "selenium-server": "2.38.0",
-    "dalek-browser-ie": "0.0.4",
+    "dalek-browser-ie": "0.0.5",
     "nightwatch-pages": "*",
-    "nightwatch": "~0.5.6",
-    "phantomjs": "~1.9.7-10"
-  }
+    "nightwatch": "~1.6.0",
+    "phantomjs": "~2.1.1",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
