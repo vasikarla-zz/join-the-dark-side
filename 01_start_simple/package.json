@@ -1,8 +1,14 @@
 {
   "dependencies": {
-    "chromedriver": "~2.10.0-1",
+    "chromedriver": "~2.29.2",
     "selenium-server": "2.38.0",
-    "nightwatch": "~0.5.6",
-    "phantomjs": "~1.9.7-10"
-  }
+    "nightwatch": "~1.6.0",
+    "phantomjs": "~2.1.1",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
